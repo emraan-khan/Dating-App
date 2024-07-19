@@ -37,6 +37,11 @@ function Header() {
         src={tinderIcon}
         alt=''
     />
+    <img 
+        className='header_logo'
+        src={tinderIcon}
+        alt=''
+    />
     </div>
   )
 }
