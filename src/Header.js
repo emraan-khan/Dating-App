@@ -2,93 +2,26 @@ import React from 'react'
 import './Header.css'
 import PersonIcon from '@mui/icons-material/Person';
 import { IconButton } from '@material-ui/core';
-import tinderIcon from './files/download.jpg'
+import tinderIcon from './files/download.jpg';
+import ForumIcon from '@mui/icons-material/Forum';
 function Header() {
-  return (
-    <div className='Header'>
-    <h2>I am a Header.</h2>
-    <IconButton>
-      <PersonIcon fontSize='large' className="header_icon" />
+    return (
+        <div className='header'>
+            <IconButton>
+                <PersonIcon fontSize='large' className="header_icon" />
+            </IconButton>
 
-    </IconButton>
+            <img
+                className='header__logo'
+                src={tinderIcon}
+                alt=''
+            />
+            <IconButton>
+            <ForumIcon fontSize='large' className='header__icon' />
+            </IconButton>
 
-    <img 
-        className='header_logo'
-        src={tinderIcon}
-        alt=''
-    />
-    <img 
-        className='header_logo'
-        src={tinderIcon}
-        alt=''
-    />
-    <img 
-        className='header_logo'
-        src={tinderIcon}
-        alt=''
-    />
-    <img 
-        className='header_logo'
-        src={tinderIcon}
-        alt=''
-    />
-    <img 
-        className='header_logo'
-        src={tinderIcon}
-        alt=''
-    />
-    <img 
-        className='header_logo'
-        src={tinderIcon}
-        alt=''
-    />
-    <img 
-        className='header_logo'
-        src={tinderIcon}
-        alt=''
-    />
-    <img 
-        className='header_logo'
-        src={tinderIcon}
-        alt=''
-    />
-    <img 
-        className='header_logo'
-        src={tinderIcon}
-        alt=''
-    />
-    <img 
-        className='header_logo'
-        src={tinderIcon}
-        alt=''
-    />
-    <img 
-        className='header_logo'
-        src={tinderIcon}
-        alt=''
-    />
-    <img 
-        className='header_logo'
-        src={tinderIcon}
-        alt=''
-    />
-    <img 
-        className='header_logo'
-        src={tinderIcon}
-        alt=''
-    />
-    <img 
-        className='header_logo'
-        src={tinderIcon}
-        alt=''
-    />
-    <img 
-        className='header_logo'
-        src={tinderIcon}
-        alt=''
-    />
-    </div>
-  )
+        </div>
+    )
 }
 
 export default Header
